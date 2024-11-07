@@ -1,0 +1,56 @@
+
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header img {
+    margin-bottom: 10px;
+}
+
+.booking-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-form {
+    padding: 10px;
+}
+
+.course-form h2 {
+    color: #df6b24;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.book-now-btn {
+    background-color: #df6b24;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.book-now-btn:hover {
+    background-color: #dba000;
+}
