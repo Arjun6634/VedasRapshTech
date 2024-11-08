@@ -39,35 +39,7 @@
         <link rel="stylesheet" href="css/responsive.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <style>
-            .menu-icon {
-                position: relative; /* Positioning for the dropdown */
-                cursor: pointer; /* Change cursor on hover */
-            }
-            
-            .dropdown {
-                display: none; /* Hidden by default */
-                position: absolute; /* Position it absolutely */
-                top: 100%; /* Align it below the hamburger icon */
-                right: 0; /* Align it to the right */
-                background-color: white; /* Background color of the dropdown */
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-                padding: 10px 0; /* Vertical padding */
-                border-radius: 5px; /* Rounded corners */
-                z-index: 1000; /* Ensure it appears on top */
-                width: 100px; /* Fixed width */
-            }
-            
-            .dropdown li {
-                display: block; /* Make items block-level */
-                padding: 10px 20px; /* Padding for items */
-                list-style: none; /* Remove bullet points */
-            }
-            
-            .dropdown li:hover {
-                background-color: #f0f0f0; /* Change background on hover */
-            }
-        </style>
+        
     </head>
     <body>
 
@@ -392,22 +364,5 @@
 		<script src="js/contact.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
-
-        <script>
-            function toggleDropdown() {
-    const dropdown = document.getElementById("dropdown-menu");
-    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block"; // Toggle visibility
-}
-
-// Hide dropdown if clicking outside
-window.onclick = function(event) {
-    const dropdown = document.getElementById("dropdown-menu");
-    if (!event.target.closest('.menu-icon') && dropdown.style.display === "block") {
-        dropdown.style.display = "none"; // Hide dropdown
-    }
-}
-
-            
-        </script>
     </body>
 </html>

@@ -38,110 +38,8 @@
         <link rel="stylesheet" href="css/responsive.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <style>
-                .courses-section {
-            padding: 50px 0;
-            background-color: #f8f9fa; /* Light background for contrast */
-        }
-        
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        
-        .course-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px; /* Space between cards */
-        }
-        
-        .course-card {
-            background-color: white; /* White card background */
-            border-radius: 10px; /* Rounded corners */
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            transition: transform 0.3s; /* Smooth scale effect */
-        }
-        
-        .course-card:hover {
-            transform: scale(1.05); /* Slightly enlarge card on hover */
-        }
-        
-        .course-image {
-            width: 100%; /* Full width */
-            height: auto; /* Maintain aspect ratio */
-        }
-        
-        .course-info {
-            padding: 15px; /* Padding around text */
-        }
-        
-        .course-title {
-            font-size: 1.5em; /* Title size */
-            margin-bottom: 10px;
-        }
-        
-        .course-description {
-            font-size: 1em; /* Description size */
-            color: #666; /* Dark grey for readability */
-            margin-bottom: 15px;
-        }
-        
-        .book-now-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #df6b24; /* Button color */
-            color: white; /* Button text color */
-            border-radius: 5px; /* Rounded button */
-            text-decoration: none; /* No underline */
-            transition: background-color 0.3s; /* Smooth color transition */
-        }
-        
-        .book-now-btn:hover {
-            background-color: #fab702; /* Darker shade on hover */
-        }
-
-
-        .menu-icon {
-            position: relative; /* Positioning for the dropdown */
-            cursor: pointer; /* Change cursor on hover */
-        }
-        
-        .dropdown {
-            display: none; /* Hidden by default */
-            position: absolute; /* Position it absolutely */
-            top: 100%; /* Align it below the hamburger icon */
-            right: 0; /* Align it to the right */
-            background-color: white; /* Background color of the dropdown */
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-            padding: 10px 0; /* Vertical padding */
-            border-radius: 5px; /* Rounded corners */
-            z-index: 1000; /* Ensure it appears on top */
-            width: 150px; /* Fixed width */
-        }
-        
-        .dropdown li {
-            display: block; /* Make items block-level */
-            padding: 10px 20px; /* Padding for items */
-            list-style: none; /* Remove bullet points */
-        }
-        
-        .dropdown li:hover {
-            background-color: #f0f0f0; /* Change background on hover */
-        }
-        
-        </style>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
         
         <div class="site-preloader-wrap">
             <div class="spinner"></div>
@@ -226,7 +124,6 @@
                 </div>
             </div>
         </div><!-- /Page Header -->
-
 
         <section class="courses-section">
             <div class="container">
@@ -329,132 +226,6 @@
             </div>
         </section>
 
-        
-        <!--<section class="course-section bg-grey padding">
-            <div class="container">
-                <div class="section-heading mb-40 text-center">
-                   <h2>Popular Courses</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 sm-padding">
-                        <div class="course-item">
-                           <div class="course-thumb">
-                                <a href="../html/pythonfullstack.html"><img src="../html/img/python_full_stack_.webp" style="width: 400px;  height:200px ;" alt="course">
-                                    </a>
-                                <a class="enroll-btn" href="#">Book Now <i class="fa fa-plus"></i></a>
-                                
-                            </div>
-                            <div class="course-details">
-                                <h3><a href="../html/pythonfullstack.html">Python Full Stack Development</a></h3>
-                                <p> This course covers web development fundamentals, including HTML, CSS, JavaScript, and popular frameworks like Django and Flask. Build dynamic, scalable applications with databases, APIs, and deploy projects efficiently.</p>
-                                <div class="course-footer">
-                                    <span><i class="fa fa-group"></i>763</span>
-                                    <span><i class="fa fa-heart"></i>205</span>
-                                    <span class="price">$499</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><-- /#item-1 -->
-                    <!--<div class="col-lg-4 col-md-6 sm-padding">
-                        <div class="course-item">
-                           <div class="course-thumb">
-                                <a href="../html/javafullstack.html"><img src="../html/img/Java-1.jpg" style="width: 400px; height: 200px;" alt="course">
-                                    </a>
-                                <a class="enroll-btn" href="#">Book Now <i class="fa fa-plus"></i></a>
-                                
-                            </div>
-                            <div class="course-details">
-                                <h3><a href="../html/javafullstack.html">Java Full Stack Development</a></h3>
-                                <p>This course covers front-end technologies like HTML, CSS, JavaScript, and back-end development with Java, Spring Boot, and Hibernate. Learn to create robust, scalable applications with RESTful APIs, databases, and deployment strategies.</p>
-                                <div class="course-footer">
-                                    <span><i class="fa fa-group"></i>763</span>
-                                    <span><i class="fa fa-heart"></i>205</span>
-                                    <span class="price">$149</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><-- /#item-2 -->
-                    <!--<div class="col-lg-4 col-md-6 sm-padding">
-                        <div class="course-item">
-                           <div class="course-thumb">
-                                <a href="../html/powerbi.html"><img src="../html/img/Microsoft-Power-BI-Training.jpg"  style="width: 400px;height: 200px;"   alt="course">
-                                    </a>
-                                <a class="enroll-btn" href="#">Book Now <i class="fa fa-plus"></i></a>
-                                
-                            </div>
-                            <div class="course-details">
-                                <h3><a href="../html/powerbi.html">PowerBI</a></h3>
-                                <p>This course teaches you how to connect, analyze, and visualize data from various sources. Learn to create interactive dashboards, reports, and gain insights through data modeling and DAX (Data Analysis Expressions).</p>
-                                <div class="course-footer">
-                                    <span><i class="fa fa-group"></i>763</span>
-                                    <span><i class="fa fa-heart"></i>205</span>
-                                    <span class="price">$239</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><-- /#item-3 -->
-                    <!--<div class="col-lg-4 col-md-6 sm-padding">
-                        <div class="course-item">
-                           <div class="course-thumb">
-                                <a href="#"><img src="../html/img/frontend.jpg" style="width: 400px;height: 200px;" alt="course">
-                                    </a>
-                                <a class="enroll-btn" href="#">Book Now <i class="fa fa-plus"></i></a>
-                                
-                            </div>
-                            <div class="course-details">
-                                <h3><a href="#">Frontend Development</a></h3>
-                                <p>This course covers HTML, CSS, and JavaScript, along with popular frameworks like React and Bootstrap. Master web design principles, animations, and interactivity to build user-friendly, dynamic web pages.</p>
-                                <div class="course-footer">
-                                    <span><i class="fa fa-group"></i>763</span>
-                                    <span><i class="fa fa-heart"></i>205</span>
-                                    <span class="price">$849</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><-- /#item-4 -->
-                    <!--<div class="col-lg-4 col-md-6 sm-padding">
-                        <div class="course-item">
-                           <div class="course-thumb">
-                                <a href="#"><img src="img/data_science_using_python.jpg" style="width: 350px;height: 200px;" alt="course">
-                                    </a>
-                                <a class="enroll-btn" href="#">Book Now <i class="fa fa-plus"></i></a>
-                                
-                            </div>
-                            <div class="course-details">
-                                <h3><a href="#">Data Science with Python</a></h3>
-                                <p>This course covers data analysis, visualization, and machine learning using powerful libraries like Pandas, NumPy, and Scikit-learn. Learn to clean, process, and analyze real-world data, build predictive models, and gain insights.</p>
-                                <div class="course-footer">
-                                    <span><i class="fa fa-group"></i>763</span>
-                                    <span><i class="fa fa-heart"></i>205</span>
-                                    <span class="price">$149</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><-- /#item-5 -->
-                    <!--<div class="col-lg-4 col-md-6 sm-padding">
-                        <div class="course-item">
-                           <div class="course-thumb">
-                                <a href="../html/cybersecurity.html"><img src="../html/img/Cyber-Security.jpeg" style="width: 400;height: 200px;" alt="course">
-                                    </a>
-                                <a class="enroll-btn" href="#">Book Now <i class="fa fa-plus"></i></a>
-                                
-                            </div>
-                            <div class="course-details">
-                                <h3><a href="../html/cybersecurity.html">Cyber security Course</a></h3>
-                                <p>This course covers essential topics such as network security, threat identification, risk management, and incident response. Learn to implement security measures to protect information and systems from cyber threats.</p>
-                                <div class="course-footer">
-                                    <span><i class="fa fa-group"></i>763</span>
-                                    <span><i class="fa fa-heart"></i>205</span>
-                                    <span class="price">$149</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div><-- /#item-6 -->
-                <!-- </div>
-            </div>
-        </section><--/#Course-Section
-         -->
         <div class="sponsor-section bd-bottom">
             <div class="container">
                 <br>
@@ -614,20 +385,5 @@
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
 
-        <script>
-            function toggleDropdown() {
-                const dropdown = document.getElementById("dropdown-menu");
-                dropdown.style.display = dropdown.style.display === "block" ? "none" : "block"; // Toggle visibility
-            }
-            
-            // Hide dropdown if clicking outside
-            window.onclick = function(event) {
-                const dropdown = document.getElementById("dropdown-menu");
-                if (!event.target.closest('.menu-icon') && dropdown.style.display === "block") {
-                    dropdown.style.display = "none"; // Hide dropdown
-                }
-            }
-            
-        </script>
     </body>
 </html>

@@ -268,3 +268,21 @@ $(window).on('load', function() {
     };
              
 })(jQuery);
+
+
+
+/* for menu icon */
+function toggleDropdown() {
+    const dropdown = document.getElementById("dropdown-menu");
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block"; // Toggle visibility
+}
+
+// Hide dropdown if clicking outside
+window.onclick = function(event) {
+    const dropdown = document.getElementById("dropdown-menu");
+    if (!event.target.closest('.menu-icon') && dropdown.style.display === "block") {
+        dropdown.style.display = "none"; // Hide dropdown
+    }
+}
+
+

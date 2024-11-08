@@ -2239,6 +2239,130 @@ span.date{
 
 
 
+/* css from index */
+
+ /* General Reset for Job Section */
+ .job-section * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Job Section Background and Text Colors */
+.job-section {
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styling for Job Section */
+.job-section header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.job-section header h1 {
+    font-size: 2.5rem;
+    color: #df6b24;
+    margin-bottom: 10px;
+}
+
+.job-section header p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Job Article Section */
+.job-section section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.job-section article {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    flex: 15 15 30%; /* Adjusts width based on available space */
+    max-width: 600px; /* Ensures articles don't get too wide */
+}
+
+.job-section article:hover {
+    transform: scale(1.02);
+}
+
+.job-section article h2 {
+    font-size: 1.8rem;
+    color: #df6b24;
+    margin-bottom: 10px;
+}
+
+.job-section article p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Image Styling for Job Articles */
+.job-section article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Requirements List */
+.job-section article ul {
+    padding-left: 20px;
+}
+
+.job-section article ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Details Button Styling */
+.job-section .details-btn {
+    background-color: #df6b24;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.job-section .details-btn:hover {
+    background-color: #dba000;
+}
+
+/* Details Section */
+.job-section .details {
+    display: none;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #df6b24;
+}
+
+.job-section .details ul {
+    padding-left: 20px;
+}
+
+.job-section .details ul li {
+    list-style-type: circle;
+    margin-bottom: 5px;
+    color: #333;
+}
 
 
 

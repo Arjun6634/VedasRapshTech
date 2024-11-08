@@ -13,129 +13,7 @@
 
 		<link rel="shortcut icon" type="image/x-icon" href="img/Rapsh-Symbol.png">
         
-        <style>
-            .courses-section {
-        padding: 50px 0;
-        background-color: #f8f9fa; /* Light background for contrast */
-    }
-    
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .section-title {
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 20px;
-    }
-    
-    .course-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 20px; /* Space between cards */
-    }
-    
-    .course-card {
-        background-color: white; /* White card background */
-        border-radius: 10px; /* Rounded corners */
-        overflow: hidden;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        transition: transform 0.3s; /* Smooth scale effect */
-    }
-    
-    .course-card:hover {
-        transform: scale(1.05); /* Slightly enlarge card on hover */
-    }
-    
-    .course-image {
-        width: 100%; /* Full width */
-        height: auto; /* Maintain aspect ratio */
-    }
-    
-    .course-info {
-        padding: 15px; /* Padding around text */
-    }
-    
-    .course-title {
-        font-size: 1.5em; /* Title size */
-        margin-bottom: 10px;
-    }
-    
-    .course-description {
-        font-size: 1em; /* Description size */
-        color: #666; /* Dark grey for readability */
-        margin-bottom: 15px;
-    }
-    
-    .book-now-btn {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #df6b24; /* Button color */
-        color: white; /* Button text color */
-        border-radius: 5px; /* Rounded button */
-        text-decoration: none; /* No underline */
-        transition: background-color 0.3s; /* Smooth color transition */
-    }
-    
-    .book-now-btn:hover {
-        background-color: #fab702; /* Darker shade on hover */
-    }
-    .course-link:hover {
-        color: #fab702; /* Change this to your desired color */
-        text-decoration: none;
-    }
-    
-    .course-link:hover .course-title {
-        color: #fab702; /* Change this to your desired color */
-    }
-
-
-
-    .menu-icon {
-        position: relative; /* Positioning for the dropdown */
-        cursor: pointer; /* Change cursor on hover */
-    }
-    
-    .dropdown {
-        display: none; /* Hidden by default */
-        position: absolute; /* Position it absolutely */
-        top: 100%; /* Align it below the hamburger icon */
-        right: 0; /* Align it to the right */
-        background-color: white; /* Background color of the dropdown */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-        padding: 10px 0; /* Vertical padding */
-        border-radius: 5px; /* Rounded corners */
-        z-index: 1000; /* Ensure it appears on top */
-        width: 150px; /* Fixed width */
-    }
-    
-    .dropdown li {
-        display: block; /* Make items block-level */
-        padding: 10px 20px; /* Padding for items */
-        list-style: none; /* Remove bullet points */
-    }
-    
-    .dropdown li:hover {
-        background-color: #f0f0f0; /* Change background on hover */
-    }
-    
-
-    .bottom-header {
-        display: flex;
-        justify-content: flex-end; /* Aligns content to the right */
-        padding: 10px; /* Adjust padding as needed */
-    }
-    
-    .right-logo {
-        margin-left: auto; /* Pushes the logo to the far right */
-    }
-    
-    
-    
-    
-    
-        </style>
+        
         <!-- Font Awesome Icons CSS -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
         <!-- Themify Icons CSS -->
@@ -164,10 +42,6 @@
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
         <div class="site-preloader-wrap">
             <div class="spinner"></div>
         </div><!-- Preloader -->
@@ -205,10 +79,7 @@
                        <div class="col-md-9 d-none d-md-block text-right">
                            <ul id="mainmenu" class="nav navbar-nav nav-menu">
                                 <li class="active"> <a href="index.html">Home</a>
-                                    <!-- <ul>
-                                       <li><a href="index.html">Home Default</a></li>
-                                       <li><a href="index-2.html">Home Modern</a></li>
-                                    </ul> -->
+                                    
                                 </li>
                                 <li><a href="about.html">About</a></li>
                                 <li class="active"> <a href="index.html">Our Services</a>
@@ -331,62 +202,6 @@
             </div>
         </section><!-- /#About Section -->
 
-        <!-- <section class="courses-section">
-            <div class="container">
-                <h2 class="section-title">Available Courses</h2>
-                <div class="course-grid">
-                    <div class="course-card">
-                        <a href="pythonfullstack.html">
-                        <img src="img/python_full_stack_.webp" style="height: 156px;" alt="Course 1" class="course-image">
-                        </a>
-                        <div class="course-info">
-                            <a href="pythonfullstack.html" class="course-link">
-                                <h3 class="course-title">Python Full Stack</h3>
-                            </a>
-                            <p class="course-description">Learn the basics of web development with HTML, CSS, and JavaScript.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="javafullstack.html">
-                        <img src="img/Java-1.jpg" style="height: 156px;" alt="Course 2" class="course-image">
-                        </a>
-                        <div class="course-info">
-                            <a href="javafullstack.html" class="course-link">
-                                <h3 class="course-title">Java Full Stack</h3>
-                            </a>
-                            <p class="course-description">Explore design principles and tools for effective graphic design.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="powerbi.html">
-                        <img src="img/Microsoft-Power-BI-Training.jpg" alt="Course 3" class="course-image">
-                        </a>
-                        <div class="course-info">
-                            <a href="powerbi.html" class="course-link">
-                            <h3 class="course-title">PowerBi</h3>
-                            </a>
-                            <p class="course-description">Learn the basics of web development with HTML, CSS, and JavaScript.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
-                    <div class="course-card">
-                        <a href="cybersecurity.html">
-                        <img src="img/Java-1.jpg" style="height: 156px;" alt="Course 4" class="course-image">
-                        </a>
-                        <div class="course-info">
-                            <a href="cybersecurity.html" class="course-link">
-                            <h3 class="course-title">Cyber-Security</h3>
-                            </a>
-                            <p class="course-description">Explore design principles and tools for effective graphic design.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
-                
-                </div>
-            </div>
-        </section> -->
 
         <section class="reg-section padding">
             <div class="container">
@@ -602,85 +417,6 @@
             </div>
         </section><!-- Video Section -->
 
-    <!--<section class="blog-section bg-grey padding">
-            <div class="container">
-                <div class="section-heading mb-40 text-center">
-                   <h2>Recent Stories</h2>
-                   <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12 xs-padding">
-                        <div class="blog-items grid-list row">
-                            <div class="col-md-4 padding-15">
-                                <div class="blog-post">
-                                    <img src="img/post-1.jpg" alt="blog post">
-                                    <div class="blog-content">
-                                        <span class="date"><i class="fa fa-clock-o"></i> January 01.2018</span>
-                                        <h3><a href="#">Standard gallery post</a></h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a href="#" class="post-meta">Read More</a>
-                                    </div>
-                                </div>
-                            </div> Post 1 -->
-                            <!--<div class="col-md-4 padding-15">
-                                <div class="blog-post">
-                                    <img src="img/post-2.jpg" alt="blog post">
-                                    <div class="blog-content">
-                                        <span class="date"><i class="fa fa-clock-o"></i> January 01.2018</span>
-                                        <h3><a href="#">Blog post with couple photos</a></h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a href="#" class="post-meta">Read More</a>
-                                    </div>
-                                </div>
-                            </div> Post 2 -->
-                            <!--<div class="col-md-4 padding-15">
-                                <div class="blog-post">
-                                    <img src="img/post-3.jpg" alt="blog post">
-                                    <div class="blog-content">
-                                        <span class="date"><i class="fa fa-clock-o"></i> January 01.2018</span>
-                                        <h3><a href="#">Standard gallery post</a></h3>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                        <a href="#" class="post-meta">Read More</a>
-                                    </div>
-                                </div>
-                            </div> Post 3 -->
-                        <!--</div>
-                    </div> Blog Posts -->
-                <!--</div>
-            </div>
-        </section> Blog Section -->
-
-      <!--  <div class="sponsor-section bd-bottom">
-            <div class="container">
-                <ul id="sponsor-carousel" class="sponsor-items owl-carousel">
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-1.png" alt="sponsor-image">
-                    </li>
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-2.png" alt="sponsor-image">
-                    </li>
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-3.png" alt="sponsor-image">
-                    </li>
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-4.png" alt="sponsor-image">
-                    </li>
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-5.png" alt="sponsor-image">
-                    </li>
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-6.png" alt="sponsor-image">
-                    </li>
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-7.png" alt="sponsor-image">
-                    </li>
-                    <li class="sponsor-item">
-                        <img src="img/sponsor-8.png" alt="sponsor-image">
-                    </li>
-                </ul>
-            </div>
-        </div> --> <!--/Sponsor Section -->
-
         <section class="widget-section padding">
             <div class="container">
                 <div class="widget-wrap row">
@@ -804,20 +540,5 @@
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
 
-        <script>
-            function toggleDropdown() {
-                const dropdown = document.getElementById("dropdown-menu");
-                dropdown.style.display = dropdown.style.display === "block" ? "none" : "block"; // Toggle visibility
-            }
-            
-            // Hide dropdown if clicking outside
-            window.onclick = function(event) {
-                const dropdown = document.getElementById("dropdown-menu");
-                if (!event.target.closest('.menu-icon') && dropdown.style.display === "block") {
-                    dropdown.style.display = "none"; // Hide dropdown
-                }
-            }
-            
-        </script>
     </body>
 </html>
