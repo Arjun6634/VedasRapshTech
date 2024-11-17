@@ -46,9 +46,9 @@
 /* Hero Section */
 .hero-section {
     text-align: center;
-    padding: 40px;
-    background-color: #27293d;
-    color: white;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
 }
 
 .hero-section h1 {
@@ -57,7 +57,7 @@
 
 .hero-section .cta-btn {
     padding: 10px 20px;
-    background-color: #f76910;
+    background-color: #df6b24;
     color: white;
     border: none;
     border-radius: 5px;
@@ -68,23 +68,6 @@
     background-color: #fab702;
 }
 
-/* Steps Section */
-.steps-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 30px 10px;
-    background-color: #fff;
-}
-
-.step {
-    text-align: center;
-    max-width: 200px;
-}
-
-.step h2 {
-    margin-bottom: 10px;
-    color: #f76910;
-}
 
 /* Services Grid Layout */
 .services-grid {
@@ -120,7 +103,7 @@
 
 /* Button Styling */
 .details-btn {
-    background-color: #f76910;
+    background-color: #df6b24;
     color: white;
     padding: 8px 15px;
     border: none;
@@ -142,6 +125,118 @@
     margin-top: 10px;
     color: #555;
 }
+
+/* for its heading image */
+.page-content h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.page-content p {
+    font-size: 1.2rem;
+    color: #383731;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #df6b24; /* bright orange to match the logo */
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+}
+
+.cta-button:hover {
+    background-color: #fab702;
+}
+
+
+
+.steps-section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.steps-section .section-title {
+    font-size: 2.5rem;
+    color: #df6b24;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.timeline-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+
+.timeline-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #df6b24;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.timeline-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.timeline-content h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.timeline-connector {
+    width: 50px;
+    height: 2px;
+    background-color: #df6b24;
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        flex-direction: column;
+    }
+    .timeline-connector {
+        width: 2px;
+        height: 50px;
+    }
+}
+
 
         </style>
     </head>
@@ -186,18 +281,15 @@
                                 <li class="active"> <a href="index.html">Home</a>
                                     
                                 </li>
-                                <li><a href="about.html">About</a></li>
-                                <li class="active"> <a href="index.html">Our Services</a>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="active"> <a href="#">Our Services</a>
                                     <ul>
-                                       <li><a href="training.html">Training</a></li>
-                                       <li class="active"><a href="staffing.html">Staffing</a>
-                                        <ul>
-                                            <li><a href="it.html">IT </a></li>
-                                            <li><a href="non-it.html">Non-IT </a></li>
-                                        </ul>
-                                    </li>
+                                        <li><a href="it.html">Staffing</a></li>
+                                        <li><a href="development.html">Development</a></li>
+                                        <li><a href="training.html">Training</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="careers.html">Careers</a></li>
                                 <li><a href="development.html">Development</a></li>
                                     
                                 <li> <a href="contact.html">Contact</a></li>
@@ -205,8 +297,8 @@
                                 <li class="menu-icon">
                                     <span onclick="toggleDropdown()" style="color: #f76910;;">&#9776;</span> <!-- Hamburger icon -->
                                     <ul id="dropdown-menu" class="dropdown">
-                                        <li><a href="help.html" style="color: black;">Help</a></li>
-                                        <li><a href="settings.html" style="color: black;">Settings</a></li>
+                                        <li><a href="help.html" class="hover-link">Help</a></li>
+                                        <li><a href="settings.html" class="hover-link">Settings</a></li>
 
                                     </ul>
                                 </li>
@@ -223,36 +315,26 @@
         <br>
         <br>
         <br>
+        <div class="pager-header-develop">
+            <div class="container">
+                <div class="page-content"><br>
+                    <h1>
+                        <span style="color: #df6b24; font-size: 40px;">"Empowering Businesses </span><br>
+                        <span style="color: #fff; font-size: 45px;">with Custom Software Solutions"</span>
+                    </h1>
+                    
+                    
+                </div>
+            </div>
+        </div>
         
         <!-- Hero Section -->
 <div class="hero-section">
-    <h1 style="color: white; font-size: xx-large;">"Transforming Ideas into High-Quality Software"</h1>
-    <!-- "Bringing Your Digital Ideas to Life"-->
-     <!-- "Your Trusted Partner in Development"-->
-      <!-- "Transforming Ideas into High-Quality Development"-->
-    <p>Innovative and client-focused software development services tailored for your business growth.</p>
-    <button class="cta-btn">Start Your Project</button>
+    <h1 style="color: #df6b24; font-size: xx-large;">“Our Development Expertise”
+    </h1>
+    <p>From concept to deployment, we specialize in delivering innovative, high-performance software solutions across diverse platforms and technologies. <br>Our expertise ensures your business stays ahead with scalable, secure, and user-friendly applications.</p>
 </div>
 
-<!-- Horizontal Steps Section -->
-<div class="steps-section">
-    <div class="step">
-        <h2>1. Consultation</h2>
-        <p>Understanding your needs and laying the foundation for your project.</p>
-    </div>
-    <div class="step">
-        <h2>2. Planning</h2>
-        <p>Strategic planning to align with your vision and goals.</p>
-    </div>
-    <div class="step">
-        <h2>3. Development</h2>
-        <p>Building robust web and mobile solutions with modern technology.</p>
-    </div>
-    <div class="step">
-        <h2>4. Delivery</h2>
-        <p>On-time project delivery with complete support and documentation.</p>
-    </div>
-</div>
 
 <!-- Enhanced Services Section -->
 <div class="services-grid">
@@ -261,37 +343,108 @@
             <img src="img/deveop1.jpg" alt="Web Development Icon">
         </div>
         <h3>Web Development</h3>
-        <p>Build responsive, high-performing websites using modern frameworks and best practices.</p>
-        <button class="details-btn" onclick="toggleCardDetails(this)">View Details</button>
-        <div class="card-details">
-            <p>From corporate websites to complex web applications, we deliver tailored solutions that exceed expectations.</p>
-        </div>
+        <p>"Build a seamless digital presence with responsive, high-performance websites tailored to your business needs."</p>
+        <a href="webdevelopment.html" class="details-btn">View Details</a>
+        
     </div>
 
     <div class="service-card">
         <div class="icon">
             <img src="img/devop2.jpg" alt="Mobile Development Icon">
         </div>
-        <h3>Mobile Development</h3>
-        <p>Craft native and cross-platform mobile applications that offer seamless user experiences.</p>
-        <button class="details-btn" onclick="toggleCardDetails(this)">View Details</button>
-        <div class="card-details">
-            <p>Our expertise in Flutter, React Native, and Swift ensures optimal performance and user satisfaction.</p>
-        </div>
+        <h3>Mobile App Development</h3>
+        <p>"Transform ideas into engaging mobile apps that deliver seamless user experiences across platforms."</p>
+        <!-- Link to another page -->
+        <a href="mobiledevlop.html" class="details-btn">View Details</a>
+        
     </div>
+    
 
     <div class="service-card">
         <div class="icon">
             <img src="img/devop4.jpg" alt="Custom Solutions Icon">
         </div>
-        <h3>Custom Software Solutions</h3>
-        <p>Develop tailor-made software to boost your business operations and productivity.</p>
-        <button class="details-btn" onclick="toggleCardDetails(this)">View Details</button>
-        <div class="card-details">
-            <p>We adapt to your unique business needs, offering agile development and reliable support throughout the process.</p>
+        <h3>Cloud Computing</h3>
+        <p>"Unlock limitless scalability and flexibility with cloud computing. Empower your business with secure, on-demand solutions for growth and innovation."</p>
+        <a href="cloud.html" class="details-btn">View Details</a>
+        
+    </div>
+    <div class="service-card">
+        <div class="icon">
+            <img src="img/develop5.jpg" alt="Full Stack Development Icon">
         </div>
+        <h3>Blockchain</h3>
+        <p>"Enhance transparency, security, and trust with innovative blockchain solutions that revolutionize business operations."</p>
+        <a href="blockchain.html" class="details-btn">View Details</a>
+       
+    </div>
+    <div class="service-card">
+        <div class="icon">
+            <img src="img/develop5.jpg" alt="Full Stack Development Icon">
+        </div>
+        <h3>IOT</h3>
+        <p>"Connect devices and systems to create intelligent networks that improve efficiency and unlock new possibilities."</p>
+        <a href="iot.html" class="details-btn">View Details</a>
+    </div>
+    <div class="service-card">
+        <div class="icon">
+            <img src="img/develop5.jpg" alt="Full Stack Development Icon">
+        </div>
+        <h3>Artificial Intelligence</h3>
+        <p>"Harness the power of AI to automate processes, gain insights, and drive smarter decision-making."</p>
+        <a href="AI.html" class="details-btn">View Details</a>
     </div>
 </div>
+
+
+<section class="steps-section">
+    <div class="container">
+        <h1 class="section-title text-center">Our Development Process</h1>
+        <div class="timeline">
+            <div class="timeline-step">
+                <div class="timeline-icon">
+                    <img src="img/consultation-icon.png" alt="Consultation">
+                </div>
+                <div class="timeline-content">
+                    <h2>Consultation</h2>
+                    <p>Understanding your needs and laying the foundation for your project.</p>
+                </div>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-step">
+                <div class="timeline-icon">
+                    <img src="img/planning-icon.png" alt="Planning">
+                </div>
+                <div class="timeline-content">
+                    <h2>Planning</h2>
+                    <p>Strategic planning to align with your vision and goals.</p>
+                </div>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-step">
+                <div class="timeline-icon">
+                    <img src="img/development-icon.png" alt="Development">
+                </div>
+                <div class="timeline-content">
+                    <h2>Development</h2>
+                    <p>Building robust web and mobile solutions with modern technology.</p>
+                </div>
+            </div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-step">
+                <div class="timeline-icon">
+                    <img src="img/delivery-icon.png" alt="Delivery">
+                </div>
+                <div class="timeline-content">
+                    <h2>Delivery</h2>
+                    <p>On-time project delivery with complete support and documentation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <script>
     function toggleCardDetails(button) {
@@ -326,8 +479,8 @@
                             <h3>Navigation</h3>
                             <ul class="widget-link">
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="#">Popular Courses</a></li>
-                                <li><a href="#">Instructors</a></li>
+                                <li><a href="jobs.html">Job Openings</a></li>
+                                <li><a href="employers.html">For Employers</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -336,10 +489,10 @@
                         <div class="widget-content">
                             <h3>Popular Courses</h3>
                             <ul class="widget-link">
-                                <li><a href="pythonfullstack.html">Python Full Stack</a></li>
-                                <li><a href="javafullstack.html">Java Full Stack</a></li>
-                                <li><a href="powerbi.html">PowerBi</a></li>
-                                <li><a href="cybersecurity.html">Cyber Security</a></li>
+                                <li><a href="it.html">IT & Tech</a></li>
+                                <li><a href="sales.html">Sales & Marketing</a></li>
+                                <li><a href="hr.html">Human Resources</a></li>
+                                <li><a href="finance.html">Finance & Accounting</a></li>
                             </ul>
                         </div>
                     </div>

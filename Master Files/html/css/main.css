@@ -49,6 +49,11 @@ body{
     position: relative;
     overflow-x: hidden;
 }
+.container {
+    width: calc(100% - 20px); /* Adjust width to account for body's margin */
+    margin: 0 auto;
+    padding: 0;
+}
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto Slab', sans-serif;
@@ -401,7 +406,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     padding: 30px 0;
     text-transform: uppercase;
     display: inline-block;
-    font-size: 12px;
+    font-size: 17px;
 }
 #mainmenu li a:hover{
     color: #fab702;
@@ -439,7 +444,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     line-height: 45px;
     display: block;
     padding: 0 15px;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
     color: #777;
@@ -520,114 +525,6 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     color: #333;
 }
 
-/* ==========================================================================
-   3.0 Slider Section
-   ========================================================================== */
-.slider-section{}
-.slider-text {
-    width: 100%;
-    text-align: left;
-}
-.slider-text h1{
-    font-size: 50px;
-    font-weight: 700;
-    color: #df6b24;
-    line-height: 1.2;
-}
-.slider-text h5{
-    font-weight: 700;
-    color: #ddd;
-}
-.nivo-caption a{
-    display: inline-block!important;
-}
-.slider-text p {
-    color: #ddd;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-.slider-wrapper {
-    position: relative;
-}
-.nivo-caption {
-    height: 100%;
-    opacity: 1;
-    background: transparent;
-    overflow: visible;
-}
-
-/* nivo directionNav css */
-.nivo-directionNav a {
-    font-size: 13px;
-    background-color: rgba(255,255,255,0.1);
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff!important;
-    top: calc(50% - 20px);
-    opacity: 0;
-    -webkit-transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -ms-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-}
-.nivo-directionNav a.nivo-prevNav {
-    left: 25px;
-}
-.nivo-directionNav a.nivo-nextNav {
-    right: 25px;
-}
-.slider-wrapper:hover .nivo-directionNav a.nivo-prevNav {
-    left: 15px;
-    opacity: 0.7;
-}
-.slider-wrapper:hover .nivo-directionNav a.nivo-nextNav {
-    right: 15px;
-    opacity: 0.7;
-}
-.nivo-directionNav a:hover{
-    opacity: 1!important;
-}
-
-/* nivo controlNav css */
-.nivo-controlNav {
-    padding: 0;
-    position: absolute;
-    z-index: 12;
-    bottom: 30px;
-    width: 100%;
-}
-.nivo-controlNav a {
-    background-color: transparent;
-	width: 12px;
-	height: 12px;
-    background-color: rgba(0,0,0,0.5);
-	border-radius: 50%;
-	display: inline-block;
-    font-size: 0;
-    cursor: pointer;
-    margin: 0 5px;
-	transition: all 0.3s linear;
-    line-height: 12px;
-}
-.nivo-controlNav a.active {
-    background-color: #2caee2;
-}
-
-.slider-section {
-    width: 100%; /* Full width of the parent */
-    height: 600px; /* Set a fixed height for the slider */
-    overflow: hidden; /* Hide any overflow */
-    position: relative; /* Keep child elements positioned correctly */
-}
-
-.nivoSlider img {
-    width: 100%; /* Make the image fill the container width */
-    height: 100%; /* Ensure the image covers the full height */
-    object-fit: cover; /* Maintain aspect ratio while covering the container */
-}
 
 /* ==========================================================================
    4.0 Promo Section
@@ -695,7 +592,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     position: relative;
 }
 .about-content{
-    padding: 100px 0;
+    padding: 50px 0;
 }
 .about-content h2{
     font-size: 40px;
@@ -708,15 +605,16 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     list-style: inside;
 }
 .about-bg {
-    background-image: url(../img/welcome-final.jpg\ copy.png);
+    background-image: url(../img/welcomefinal.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover; /* This makes the image cover the entire section while maintaining aspect ratio */
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 75%;
     left: 0;
     bottom: 0;
+    border-radius: 10px;
 }
 
 /*About Section 2*/
@@ -1360,7 +1258,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     left: 10%;
     bottom: 15px;
     text-align: center;
-    background-color: rgba(250, 183, 2, 0.8);
+    
     color: #fff;
     display: block;
     padding: 20px;
@@ -1410,6 +1308,45 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 
 .pager-header-about{
     background-image: url(../img/aboutus.lpg.jpg);
+	
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+    min-height: 550px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.pager-header-career{
+    background-image: url(../img/careers3.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+    min-height: 550px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.pager-header-it{
+    background-image: url(../img/it-stafing1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+    min-height: 550px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.pager-header-nonit{
+    
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
@@ -1420,6 +1357,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
     display: flex;
     align-items: center;
 }
+
 .pager-header-training{
     background-image: url(../img/training\ copy.jpg);
 	background-repeat: no-repeat;
@@ -1427,7 +1365,7 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
-    min-height: 590px;
+    min-height: 550px;
     
     display: flex;
     align-items: center;
@@ -1439,30 +1377,38 @@ a,a:hover, .overlay, img, .form-control,  .form-control:hover, button{
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
-    min-height: 590px;
+    min-height: 550px;
     
     display: flex;
     align-items: center;
 }
 .pager-header-develop{
-    background-image: url(../img/development.jpg);
+    background-image: url(../img/devlop.jpg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
 	-webkit-background-size: cover;
 	background-size: cover;
-    min-height: 590px;
+    min-height: 550px;
     
     display: flex;
     align-items: center;
 }
 #google_map {
-    background-image: url(../img/Screenshot\ \(2\).png); /* Replace with your image path */
-    background-size: cover; /* Make the image cover the entire div */
-    background-position: top; /* Center the image */
+    background-image: url(../img/Location1.png); /* Ensure the image path is correct */
+    background-size: cover; /* Ensures the image scales to cover the entire div */
+    background-position: center; /* Centers the image both vertically and horizontally */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     height: 400px; /* Adjust height as needed */
-    width: 100%; /* Make it full-width */
+    width: 100%; /* Stretches the section to full width */
+    display: flex; /* Optional: If you want to add text or elements in the center */
+    align-items: center; /* Centers child content vertically */
+    justify-content: center; /* Centers child content horizontally */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for depth */
 }
+
+
 
 .pager-header h2{
     color: #fff;
@@ -2095,7 +2041,7 @@ span.date{
 
 /* Pagination
 =============== */
-.pagination_wrap{}
+
 .pagination_wrap li{
     display: inline-block;
     margin: 0 5px;
@@ -2253,7 +2199,7 @@ span.date{
 .job-section {
     background-color: #ffffff;
     color: #333;
-    padding: 20px;
+    padding: 0px;
 }
 
 /* Header Styling for Job Section */
@@ -2365,5 +2311,189 @@ span.date{
 }
 
 
+/* its for teams in about page*/
+  /* Styling for Team Section */
+  .team-section .section-heading h2 {
+    color: #df6b24;
+  }
 
+  .team-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+  }
+
+  .team-thumb img {
+    width: 100%;
+   
+    display: block;
+  }
+
+  /* Styling for text below image */
+  .image-text {
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+
+  .team-details {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 0 0 8px 8px;
+  }
+
+  .team-details h4 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #df6b24;
+  }
+
+  .team-details span {
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .team-details p {
+    font-size: 14px;
+    color: #f8f6f6;
+    margin: 10px 0 0;
+  }
+
+  /* this is for recruitment-phases padding */
+   /* Section Styling */
+.recruitment-phases .section-heading h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0px;
+}
+
+.recruitment-phases .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Icon Styling */
+.recruitment-phases .icon-container {
+    font-size: 2rem;
+    color: rgb(2, 5, 51);
+    margin-bottom: 10px;
+}
+
+/* Card Hover Effect */
+.recruitment-phases .card:hover {
+    background-color: rgb(2, 5, 51);
+    color: #fff;
+    transform: translateX(10px);
+}
+
+.recruitment-phases .card:hover .icon-container,
+.recruitment-phases .card:hover h4,
+.recruitment-phases .card:hover p {
+    color: #fff;
+}
+
+/* Card Title and Text Styling */
+.recruitment-phases .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.recruitment-phases .card-text {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recruitment-phases .card {
+        margin-bottom: 20px;
+    }
+}
+.container-hiring {
+
+background-image: url();
+}
+
+
+
+
+.card-title-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px; /* Adjust text size as needed */
+    color: #333;
+    margin-top: 10px;
+}
+
+.card-title-second .icon {
+    font-size: 36px; /* Larger icon size */
+    color: #df6b24; /* Orange color for the icon */
+    margin-bottom: 8px; /* Spacing between icon and text */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Optional: Add hover effect */
+.card-title-second:hover .icon {
+    color: #e2853f; /* Slightly lighter orange on hover */
+    transform: translateX(5px); /* Subtle movement effect */
+}
+
+
+
+
+
+
+   /* Style for the overall section */
+   .slider-section {
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Slider container */
+.your-slider {
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center; /* Center the video vertically */
+    width: 100%;
+    height: 100%;
+}
+
+/* Video styling */
+.slider-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Optional: add an overlay on the video */
+.slider-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+    z-index: 1;
+}
 

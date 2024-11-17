@@ -1,217 +1,384 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VedasRapshTech - Recruitment & Placements</title>
-    
+    <title>Staffing Solutions - Vedas Rapshtech</title>
     <style>
-        * {
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        
-        body {
-            line-height: 1.6;
-            background-color: #f4f4f9;
-        }
-        
-        .container {
+
+        section {
+            padding: 40px;
+            background-color: #fff;
             max-width: 1200px;
             margin: auto;
-            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
-        /* Header */
-        header {
-            background-color: #fc8d0f;
-            padding: 15px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #fff;
+
+        h1 {
+            color: #0a0a45; 
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
         }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
+
+        h2 {
+            color: #333;
+            font-size: 28px;
+            margin-top: 30px;
+            border-bottom: 2px solid #ff6600; /* Orange */
+            padding-bottom: 10px;
         }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
+
+        h3 {
+            color: #0a0a45; /* Navy Blue */
+            font-size: 24px;
+            margin-top: 40px;
+            text-align: center;
         }
-        
-        .btn-login {
-            background-color: #f8811f;
-            padding: 8px 15px;
-            border-radius: 5px;
+
+        p, ul, ol {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
         }
-        
-        /* Hero Section */
-        .hero {
-            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
-            height: 400px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+
+        ul, ol {
+            margin-left: 40px;
         }
-        
-        .hero-content h1 {
-            font-size: 2.5em;
+
+        ul li, ol li {
             margin-bottom: 10px;
         }
-        
-        .btn-cta {
-            background-color: #f5910e;
-            padding: 10px 20px;
+
+        /* Button Styling */
+        button {
+            background-color: #ff6600; /* Orange */
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
             border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0a0a45; /* Navy Blue */
+        }
+
+        a {
             text-decoration: none;
+        }
+
+        /* Interactive hover effect for headings */
+        h2:hover {
+            color: #ff6600;
+            transition: color 0.3s;
+        }
+
+        /* Scroll-to-top button */
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #0a0a45; /* Navy Blue */
             color: #fff;
-        }
-        
-        /* Services Section */
-        .services {
-            background-color: #fff;
-            padding: 40px;
-            text-align: center;
-        }
-        
-        .service-cards {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-        }
-        
-        .card {
-            background-color: #f4f4f9;
-            padding: 20px;
-            border-radius: 10px;
-            width: 200px;
-        }
-        
-        /* Job Listings */
-        .jobs {
-            padding: 40px;
-        }
-        
-        .job-item {
-            background-color: #e9f5ff;
-            padding: 15px;
-            margin: 10px 0;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
             border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
         }
-        
-        .job-item a {
-            color: #0073e6;
+
+        #scrollTopBtn:hover {
+            background-color: #ff6600; /* Orange */
         }
-        
-        /* Footer */
-        footer {
-            background-color: #005bb5;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        
-        .social-icons a {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 10px;
-        }
-        
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">VedasRapshTech</div>
-            <nav>
+
+    <section id="staffing">
+        <h1>Tailored Staffing Solutions to Power Your Business</h1>
+
+        <p>
+            At Vedas Rapshtech, we understand that finding the right talent is critical to the success of your business. Whether you need temporary support for short-term projects or long-term staffing solutions, our expert team is here to connect you with top-tier professionals who meet your unique needs.
+        </p>
+
+        <h2>Why Choose Our Staffing Solutions?</h2>
+        <ul>
+            <li><strong>Industry Expertise:</strong> We specialize in providing staffing solutions for the IT industry, covering a wide range of roles, from software developers and engineers to project managers and IT support staff. We ensure that every candidate we recommend is thoroughly vetted for both technical skills and cultural fit.</li>
+            
+            <li><strong>Flexible Hiring Models:</strong> We offer flexible staffing models tailored to your business requirements:
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#" class="btn-login">Login</a></li>
+                    <li><strong>Temporary Staffing:</strong> Quickly scale your team for specific projects or seasonal needs without the long-term commitment.</li>
+                    <li><strong>Permanent Placement:</strong> Find full-time, dedicated professionals who are the perfect fit for your team and long-term goals.</li>
+                    <li><strong>Contract-to-Hire:</strong> A flexible solution allowing you to evaluate candidates on a contract basis before making permanent hiring decisions.</li>
                 </ul>
-            </nav>
-        </div>
-    </header>
+            </li>
+            
+            <li><strong>Faster Time to Hire:</strong> With our extensive network of skilled professionals, we reduce the time it takes to fill open positions, ensuring that your projects remain on track and your business continues to grow without interruption.</li>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Empowering Careers with VedasRapshTech</h1>
-            <p>Your trusted partner in recruitment & placements</p>
-            <a href="#" class="btn-cta">Explore Opportunities</a>
-        </div>
+            <li><strong>Customized Staffing Strategy:</strong> Every business is different, and so are its staffing needs. We work closely with you to understand your goals and deliver personalized solutions that align with your business objectives.</li>
+        </ul>
+
+        <h2>Our Staffing Process</h2>
+        <ol>
+            <li><strong>Consultation & Understanding:</strong> We begin by understanding your specific staffing requirements, company culture, and business goals.</li>
+            <li><strong>Talent Search:</strong> Using our vast network and industry-leading recruitment tools, we source top candidates who are the right fit for your roles.</li>
+            <li><strong>Screening & Evaluation:</strong> Each candidate is carefully screened through a rigorous evaluation process to ensure they have the necessary skills and experience to meet your needs.</li>
+            <li><strong>Onboarding & Support:</strong> Once you’ve selected the ideal candidates, we assist with the onboarding process to ensure a seamless transition into your team. We continue to provide support and ensure satisfaction.</li>
+        </ol>
+
+        <h2>Benefits of Partnering with Vedas Rapshtech</h2>
+        <ul>
+            <li><strong>Access to Top Talent:</strong> We maintain a deep pool of qualified professionals across various domains, ensuring that you get access to the best talent in the market.</li>
+            <li><strong>Reduced Hiring Risk:</strong> Our comprehensive screening process ensures that you hire candidates who not only have the right skills but also align with your company values.</li>
+            <li><strong>Cost-Effective Solutions:</strong> We offer cost-effective staffing solutions that help you stay within budget while meeting your workforce needs.</li>
+        </ul>
+
+        <h2>Industries We Serve</h2>
+        <p>We provide staffing solutions across a variety of industries, including:</p>
+        <ul>
+            <li>IT and Software Development</li>
+            <li>Financial Services</li>
+            <li>Healthcare</li>
+            <li>Manufacturing</li>
+            <li>Retail & E-commerce</li>
+            <li>Telecommunications</li>
+        </ul>
+
+        <h2>Let’s Build Your Dream Team</h2>
+        <p>
+            Whether you're a startup looking for talented developers or an established company in need of specialized project-based staffing, Vedas Rapshtech is here to provide you with the right talent. Get in touch with us today to learn more about our staffing services and how we can help you scale your business.
+        </p>
+
+        <h3>Contact Us Today to Find the Right Talent for Your Business Needs!</h3>
+        <a href="contact.html">
+            <button>Get Started</button>
+        </a>
     </section>
 
-    <!-- About Us Section -->
-    <section class="about">
-        <h2>About VedasRapshTech</h2>
-        <p>We are dedicated to connecting top talent with leading companies to help them achieve their career goals.</p>
-    </section>
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">Top</button>
 
-    <!-- Services Section -->
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Job Listings</h3>
-                <p>Browse through thousands of job openings.</p>
-            </div>
-            <div class="card">
-                <h3>Resume Building</h3>
-                <p>Get a professionally crafted resume.</p>
-            </div>
-            <div class="card">
-                <h3>Skill Training</h3>
-                <p>Enhance your skills to land your dream job.</p>
-            </div>
-        </div>
-    </section>
+    <script>
+        // Scroll-to-top button functionality
+        window.onscroll = function() {
+            var scrollTopBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
 
-    <!-- Featured Jobs Section -->
-    <section class="jobs">
-        <h2>Featured Jobs</h2>
-        <div class="job-listings">
-            <div class="job-item">
-                <h4>Software Developer</h4>
-                <p>Location: Hyderabad | Full-time</p>
-                <a href="#">Apply Now</a>
-            </div>
-            <div class="job-item">
-                <h4>Data Analyst</h4>
-                <p>Location: Bengaluru | Contract</p>
-                <a href="#">Apply Now</a>
-            </div>
-        </div>
-    </section>
+        function scrollToTop() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>What Our Candidates Say</h2>
-        <div class="testimonial">
-            <p>"VedasRapshTech helped me land my dream job!"</p>
-            <span>- Rahul S.</span>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 VedasRapshTech. All Rights Reserved.</p>
-            <div class="social-icons">
-                <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Twitter</a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
+
+
+
+
+<div class="slider-wrapper">
+    <div id="main-slider" class="nivoSlider">
+        <img src="img/IT Company.png" alt="" title="#slider-caption-1"/>
+        <img src="img/homepage1.jpg" alt="" title="#slider-caption-2"/>
+        <img src="img/homepage1.jpg" alt="" title="#slider-caption-3"/>
+        
+    </div><!-- /#main-slider 1 -->
+
+    <div id="slider-caption-1" class="nivo-html-caption slider-caption">
+        <div class="display-table">
+            <div class="table-cell">
+                <div class="container">
+                   <div class="slider-text">
+                        <h1 class="wow cssanimation fadeInTop" data-wow-delay="1s" data-wow-duration="800ms">"Driving Innovation in IT Solutions"
+                        </h1>
+                        <p class="wow cssanimation fadeInBottom" data-wow-delay="1s" style="color: #fff;">Empowering businesses with cutting-edge technology and a commitment to excellence in IT services and support.<br></p>
+                        
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div> <!-- /#slider-caption-2 -->
+    <div id="slider-caption-2" class="nivo-html-caption slider-caption">
+        <div class="display-table">
+            <div class="table-cell">
+                <div class="container">
+                   <div class="slider-text">
+                        <h1 class="wow cssanimation fadeInTop" data-wow-delay="1s" data-wow-duration="800ms">"Building the Future, One Solution at a Time"
+                        </h1>
+                        <p class="wow cssanimation fadeInBottom" data-wow-delay="1s" style="color: #fff;">Delivering high-performance software solutions—transforming ideas into impactful digital experiences.</p>
+                        
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div> <!-- /#slider-caption-3 -->
+    <div id="slider-caption-3" class="nivo-html-caption slider-caption">
+        <div class="display-table">
+            <div class="table-cell">
+                <div class="container">
+                   <div class="slider-text">
+                        <h1 class="wow cssanimation fadeInTop" data-wow-delay="1s" data-wow-duration="800ms"> "Connecting Talent with Opportunity"
+                        </h1>
+                        <p class="wow cssanimation fadeInBottom" data-wow-delay="1s" style="color: white;">Your trusted partner for specialized IT talent acquisition—placing skilled professionals to lead and inspire.</p>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div> <!-- /#slider-caption-5 -->
+    <div id="slider-caption-4" class="nivo-html-caption slider-caption">
+        <div class="display-table">
+            <div class="table-cell">
+                <div class="container">
+                   <div class="slider-text">
+                        <h1 class="wow cssanimation fadeInTop" data-wow-delay="1s" data-wow-duration="800ms"></h1>
+                        <p class="wow cssanimation fadeInBottom" data-wow-delay="1s"> <br></p>
+                        
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 
+
+
+ <div class="hero-section">
+  <h1 style="color: white; font-size: xx-large;">"Transforming Ideas into High-Quality Software"</h1>
+  
+  <p>Innovative and client-focused software development services tailored for your business growth.</p>
+  <button class="cta-btn">Start Your Project</button>
+</div> -->
+
+
+ <!-- <section class="reg-section padding">
+            <div class="container">
+                <div class="row reg-wrap">
+                    <div class="col-lg-8 text-center">
+                        <div class="reg-content">
+                            <h3 class="counter">112</h3>
+                            <h2>Total Registered Candidates</h2>
+                            <h3>Join our staffing network! Register now and get connected with top job opportunities.</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="reg-form">
+                            <div class="form-heading">
+                                <h2>Register Now <span>Access top job roles in our network</span></h2>
+                                <h3>No registration fee required.</h3>
+                            </div>
+                            <form action="#" method="post">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control p-1" id="jobRoles" name="jobRoles" required>
+                                        <option value="" disabled selected>Select Your Desired Job Role</option>
+                                        <option value="business-dev-manager">Business Development Manager</option>
+                                        <option value="marketing-sales">Marketing and Sales</option>
+                                        <option value="human-resources">Human Resources</option>
+                                        <option value="customer-service">Customer Service and Support</option>
+                                        <option value="it-support">IT Support</option>
+                                        <option value="accounting-finance">Accounting and Finance</option>
+                                        
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Register Now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- Staffing Registration Section -->
+        
+            
+        
+        
+        <!-- <section class="event-section bg-grey padding">
+            <div class="container">
+               <div class="section-heading mb-40 text-center">
+                   <h2>Upcoming Events</h2>
+                   <p>Lorem Ipsum is simply dummy text of the printing and industry.</p>
+                </div>
+                <div class="event-items">
+                    <div class="row event-wrap d-flex align-items-center">
+                        <div class="col-lg-2 text-center">
+                            <div class="event-date">
+                                <h2>15 <span>January</span></h2>
+                            </div>
+                            <div class="ticket-btn">
+                                <a href="#" class="default-btn">Purchase Ticket</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="event-details">
+                                <h2><a href="#">How to start a blog site using wordpress.</a></h2>
+                                <ul class="event-time">
+                                    <li><i class="fa fa-clock-o"></i>5:00 AM - 9:00 PM</li>
+                                    <li><i class="fa fa-map-marker"></i>Inter Continental Garden, Dhaka.</li>
+                                </ul>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry’s standard dummy text ever scramble.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="event-thumb">
+                                <img src="img/event1.jpg" alt="event">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row event-wrap d-flex align-items-center">
+                        <div class="col-lg-2 text-center">
+                            <div class="event-date">
+                                <h2>21 <span>January</span></h2>
+                            </div>
+                            <div class="ticket-btn">
+                                <a href="#" class="default-btn">Purchase Ticket</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="event-details">
+                                <h2><a href="#">How to create a new landing page.</a></h2>
+                                <ul class="event-time">
+                                    <li><i class="fa fa-clock-o"></i>5:00 AM - 9:00 PM</li>
+                                    <li><i class="fa fa-map-marker"></i>Inter Continental Garden, Dhaka.</li>
+                                </ul>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. The industry’s standard dummy text ever scramble.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="event-thumb">
+                                <img src="img/event2.jpg" alt="event">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->

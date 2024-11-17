@@ -37,6 +37,196 @@
 		<!-- Responsive CSS -->
         <link rel="stylesheet" href="css/responsive.css">
 
+        <style>
+/* Basic styling for the course section */
+.courses-section {
+    padding: 30px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Styling for the course grid */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+}
+
+.course-image {
+    width: 100%;
+    height: 156px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.course-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.course-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.book-now-btn {
+    display: inline-block;
+    background-color: #df6b24;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #fab702;
+}
+
+/* Styling for the course booking form */
+.course-form {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: left;
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="date"] {
+    background-color: #f5f5f5;
+}
+
+.submit-btn {
+    display: block;
+    width: 60%;
+    padding: 12px;
+    background-color: #df6b24;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Centers the button */
+}
+
+.submit-btn:hover {
+    background-color: #fab702;
+}
+
+.close-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #df6b24;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: #fab702;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        max-width: 300px;
+    }
+}
+
+        </style>
+        
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -78,26 +268,23 @@
                                 <li class="active"> <a href="index.html">Home</a>
                                     
                                 </li>      
-                                <li><a href="about.html">About</a></li>
-                                <li class="active"> <a href="training.html">Our Services</a>
+                                <li><a href="about.html">About Us</a></li>
+                                <li class="active"> <a href="#">Our Services</a>
                                     <ul>
-                                       <li><a href="training.html">Training</a></li>
-                                       <li class="active"><a href="staffing.html">Staffing</a>
-                                        <ul>
-                                            <li><a href="it.html">IT </a></li>
-                                            <li><a href="non-it.html">Non-IT </a></li>
-                                        </ul>
-                                    </li>
+                                        <li><a href="it.html">Staffing</a></li>
+                                        <li><a href="development.html">Development</a></li>
+                                        <li><a href="training.html">Training</a></li>
                                     </ul>
                                 </li>
+                                <li><a href="careers.html">Careers</a></li>
                                 <li><a href="development.html">Development</a></li>
                                 
                                 <li> <a href="contact.html">Contact</a></li>
                                 <li class="menu-icon">
                                     <span onclick="toggleDropdown()" style="color: #f76910;;">&#9776;</span> <!-- Hamburger icon -->
                                     <ul id="dropdown-menu" class="dropdown">
-                                        <li><a href="help.html" style="color: black;">Help</a></li>
-                                        <li><a href="settings.html" style="color: black;">Settings</a></li>
+                                        <li><a href="help.html" class="hover-link">Help</a></li>
+                                        <li><a href="settings.html" class="hover-link">Settings</a></li>
 
                                     </ul>
                                 </li>
@@ -113,9 +300,8 @@
         <div class="pager-header-training">
             <div class="container">
                 <div class="page-content">
-                    <h2> Courses We Offer</h2>
-                    <br>
-                    <br>
+                    <h2>Courses We Offer</h2>
+                    
                     <p style="color: white;">Lorem Ipsum is simply text of the industry. </p>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="courses.html" style="color: #df6b24;">Home</a></li>
@@ -129,102 +315,169 @@
             <div class="container">
                 <h2 class="section-title">Available Courses</h2>
                 <div class="course-grid">
-                    <div class="course-card">
-                        <a href="pythonfullstack.html">
-                        <img src="img/python_full_stack_.webp" style="height: 156px;" alt="Course 1" class="course-image">
-                        </a>
-                        <div class="course-info">
-                            <a href="pythonfullstack.html" class="course-link">
-                                <h3 class="course-title">Python Full Stack</h3>
-                            </a>
-                            <p class="course-description">Learn the basics of web development with HTML, CSS, and JavaScript.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
+                    <!-- Course 1: Python Full Stack -->
+            <div class="course-card">
+                <a href="pythonfullstack.html">
+                    <img src="img/python_full_stack_.webp" style="height: 156px;" alt="Course 1" class="course-image">
+                </a>
+                <div class="course-info">
+                    <a href="pythonfullstack.html" class="course-link">
+                        <h3 class="course-title">Python Full Stack</h3>
+                    </a>
+                    <p class="course-description">Learn the basics of web development with HTML, CSS, and other frameworks.</p>
+                    <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('python-fullstack')">Book Now</a>
+                </div>
+            </div>
+        
+                    <!-- Course 2: Java Full Stack -->
                     <div class="course-card">
                         <a href="javafullstack.html">
-                        <img src="img/Java-1.jpg" style="height: 156px;" alt="Course 2" class="course-image"></a>
+                            <img src="img/Java-1.jpg" style="height: 156px;" alt="Course 2" class="course-image">
+                        </a>
                         <div class="course-info">
                             <a href="javafullstack.html" class="course-link">
-                            <h3 class="course-title">Java Full Stack</h3>
-                             </a>
+                                <h3 class="course-title">Java Full Stack</h3>
+                            </a>
                             <p class="course-description">Explore design principles and tools for effective graphic design.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
+                            <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('java-fullstack')">Book Now</a>
                         </div>
                     </div>
+        
+                    <!-- Course 3: PowerBi -->
                     <div class="course-card">
                         <a href="powerbi.html">
-                        <img src="img/Microsoft-Power-BI-Training.jpg" alt="Course 3" class="course-image">
+                            <img src="img/Microsoft-Power-BI-Training.jpg" style="height: 156px;" alt="Course 3" class="course-image">
                         </a>
                         <div class="course-info">
                             <a href="powerbi.html" class="course-link">
-                            <h3 class="course-title">PowerBi</h3>
+                                <h3 class="course-title">PowerBi</h3>
                             </a>
-                            <p class="course-description">Learn the basics of web development with HTML, CSS, and JavaScript.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
+                            <p class="course-description">Learn the basics of data visualization and reporting with Power BI.</p>
+                            <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('powerbi')">Book Now</a>
                         </div>
                     </div>
+        
+                    <!-- Course 4: Cyber-Security -->
                     <div class="course-card">
                         <a href="cybersecurity.html">
-                        <img src="img/Cyber-Security.jpeg" style="height: 156px;" alt="Course 4" class="course-image">
+                            <img src="img/Cyber-Security.jpeg" style="height: 156px;" alt="Course 4" class="course-image">
                         </a>
                         <div class="course-info">
                             <a href="cybersecurity.html" class="course-link">
-                            <h3 class="course-title">Cyber-Security</h3>
+                                <h3 class="course-title">Cyber-Security</h3>
                             </a>
-                            <p class="course-description">Explore design principles and tools for effective graphic design.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
+                            <p class="course-description">Learn the fundamentals of Cyber Security and protect your systems.</p>
+                            <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('cyber-security')">Book Now</a>
                         </div>
                     </div>
+        
+                    <!-- Course 5: Frontend Development -->
                     <div class="course-card">
                         <a href="#">
-                        <img src="img/frontend.jpg" style=" height: 156px;" alt="Course 5" class="course-image">
+                            <img src="img/frontend.jpg" style="height: 156px;" alt="Course 5" class="course-image">
                         </a>
                         <div class="course-info">
                             <a href="#" class="course-link"></a>
-                            <h3 class="course-title">Frontend development</h3>
-                            <p class="course-description">This course covers HTML, CSS, and JavaScript, along with popular frameworks like React.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
+                            <h3 class="course-title">Frontend Development</h3>
+                            <p class="course-description">This course covers HTML, CSS, JavaScript, and popular frameworks like React.</p>
+                            <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('frontend-development')">Book Now</a>
                         </div>
                     </div>
+        
+                    <!-- Course 6: Data Science with Python -->
                     <div class="course-card">
                         <a href="#">
-                        <img src="img/data_science_using_python.jpg" style="height: 156px;" alt="Course 6" class="course-image">
-                        
+                            <img src="img/data_science_using_python.jpg" style="height: 156px;" alt="Course 6" class="course-image">
+                        </a>
                         <div class="course-info">
-                            <a href="#">
-                            <h3 class="course-title">Data Science  Python</h3>
+                            <a href="#" class="course-link">
+                                <h3 class="course-title">Data Science with Python</h3>
                             </a>
-                            <p class="course-description">This course covers data analysis, visualization, and machine learning using powerful libraries like Pandas.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
+                            <p class="course-description">Learn data analysis, visualization, and machine learning using Pandas.</p>
+                            <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('data-science-python')">Book Now</a>
                         </div>
                     </div>
-                    <div class="course-card">
-                        <a href="">
-                        <img src="img/aws.jpg" style="height: 156px;" alt="Course 7" class="course-image">
-                        <div class="course-info">
-                            <a href="pythonfullstack.html" class="course-link">
-                            <h3 class="course-title">Amazon Web Services</h3>
-                            </a>
-                            <p class="course-description">This course covers data analysis, visualization, and machine learning using powerful libraries like Pandas.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
-                        </div>
-                    </div>
+        
+                    <!-- Course 7: AWS -->
                     <div class="course-card">
                         <a href="#">
-                        <img src="img/ai.jpg" style="height: 156px;" alt="Course 8" class="course-image"></a>
+                            <img src="img/aws.jpg" style="height: 156px;" alt="Course 7" class="course-image">
+                        </a>
                         <div class="course-info">
                             <a href="pythonfullstack.html" class="course-link">
-                            <h3 class="course-title">Artificial Intelligence</h3>
+                                <h3 class="course-title">Amazon Web Services</h3>
                             </a>
-                            <p class="course-description">This course covers data analysis, visualization, and machine learning using powerful libraries like Pandas.</p>
-                            <a href="booking.html" class="book-now-btn">Book Now</a>
+                            <p class="course-description">This course covers cloud computing with AWS and its key services.</p>
+                            <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('aws')">Book Now</a>
                         </div>
                     </div>
+        
+                    <!-- Course 8: Artificial Intelligence -->
+                    <div class="course-card">
+                        <a href="#">
+                            <img src="img/ai.jpg" style="height: 156px;" alt="Course 8" class="course-image">
+                        </a>
+                        <div class="course-info">
+                            <a href="pythonfullstack.html" class="course-link">
+                                <h3 class="course-title">Artificial Intelligence</h3>
+                            </a>
+                            <p class="course-description">Learn the fundamentals of AI, including machine learning and neural networks and others Technology</p>
+                            <a href="javascript:void(0);" class="book-now-btn" onclick="toggleForm('ai')">Enroll Now</a>
+                        </div>
+                    </div>
+        
                     <!-- Add more course cards as needed -->
                 </div>
             </div>
         </section>
+        
+        <!-- Course Booking Form -->
+<div id="course-form" class="course-form">
+    <div class="form-container">
+        <h2>Book Your Course</h2>
+        <form action="#" method="post">
+            <label for="course-name">Select Course:</label>
+            <select id="course-name" name="course-name" required>
+                <option value="">Choose a course</option>
+                <option value="python-fullstack">Python Full Stack</option>
+                <option value="java-fullstack">Java Full Stack</option>
+                <option value="powerbi">PowerBI</option>
+                <option value="cyber-security">Cyber-Security</option>
+                <option value="frontend-development">Frontend Development</option>
+                <option value="data-science-python">Data Science Python</option>
+                <option value="aws">AWS</option>
+                <option value="ai">AI</option>
+            </select>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="date">Preferred Start Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit" class="submit-btn">Submit Enroll</button>
+        </form>
+        <button class="close-btn" onclick="closeForm()">Close</button>
+    </div>
+</div>
+
+<script>
+    function toggleForm(course) {
+        var form = document.getElementById('course-form');
+        form.style.display = 'flex';
+        document.getElementById('course-name').value = course;
+    }
+
+    function closeForm() {
+        document.getElementById('course-form').style.display = 'none';
+    }
+</script>
 
         <div class="sponsor-section bd-bottom">
             <div class="container">
@@ -283,8 +536,8 @@
                             <h3>Navigation</h3>
                             <ul class="widget-link">
                                 <li><a href="about.html">About Us</a></li>
-                                <li><a href="#">Popular Courses</a></li>
-                                <li><a href="#">Instructors</a></li>
+                                <li><a href="jobs.html">Job Openings</a></li>
+                                <li><a href="employers.html">For Employers</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
@@ -293,10 +546,10 @@
                         <div class="widget-content">
                             <h3>Popular Courses</h3>
                             <ul class="widget-link">
-                                <li><a href="pythonfullstack.html">Python Fullstack</a></li>
-                                <li><a href="javafullstack.html">Java Fullstack</a></li>
-                                <li><a href="powerbi.html">PowerBI</a></li>
-                                <li><a href="cybersecurity.html">Cyber-Security</a></li>
+                                <li><a href="it.html">IT & Tech</a></li>
+                                <li><a href="sales.html">Sales & Marketing</a></li>
+                                <li><a href="hr.html">Human Resources</a></li>
+                                <li><a href="finance.html">Finance & Accounting</a></li>
                             </ul>
                         </div>
                     </div>
@@ -384,6 +637,7 @@
 		<script src="js/contact.js"></script>
 		<!-- Main JS -->
 		<script src="js/main.js"></script>
+        
 
     </body>
 </html>
