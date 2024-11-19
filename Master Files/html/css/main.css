@@ -1159,6 +1159,8 @@
         align-items: center;
     }
 
+    
+
     .pager-header-develop {
         background-image: url(../img/devlop.jpg);
         background-repeat: no-repeat;
@@ -1235,7 +1237,7 @@
 
     @media (max-width: 576px) {
         .pager-header-career {
-            min-height: 300px;
+            min-height: 250px;
             /* Reduce height further for mobile devices */
         }
 
@@ -1249,26 +1251,29 @@
         }
     }
 
-    @media (max-width: 576px) {
+    @media (max-width: 780px) { /* Mobile view */
         .pager-header-contact {
-            min-height: 300px;
-            /* Reduce height further for mobile devices */
+            min-height: 200px; /* Reduce height further for smaller devices */
+            background-size: cover; /* Maintain responsiveness */
         }
-
-        .pager-header h2 {
-            font-size: 18px;
-            /* Further scale down text */
+    
+        .page-content h2 span {
+            font-size: 22px; /* Further scale down heading font size */
         }
-
-        .pager-header p {
-            font-size: 12px;
+    
+        .page-content p {
+            font-size: 12px; /* Further scale down paragraph font size */
+        }
+    
+        .page-content {
+            padding: 10px; /* Add padding for better spacing */
         }
     }
 
 
     @media (max-width: 576px) {
         .pager-header-develop {
-            min-height: 300px;
+            min-height: 250px;
             /* Reduce height further for mobile devices */
         }
 
